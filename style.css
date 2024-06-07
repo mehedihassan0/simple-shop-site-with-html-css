@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #ffffff;
+  border: 0;
+  outline: 0;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  width: 90%;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: 50px;
+}
+.headerMenu1 {
+  display: flex;
+  width: 27%;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 200;
+  font-weight: 300;
+}
+.headerMenu {
+  margin-left: 20px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+}
+
+/* top1 */
+.top1 {
+  display: flex;
+}
+.top1div {
+  width: 600px;
+  height: 400px;
+  margin-top: 80px;
+  margin-left: 80px;
+  font-size: 23px;
+}
+.top1div a {
+  text-decoration: none;
+  background-color: #e02c6d;
+  color: #ffffff;
+  border-radius: 14px;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+  font-size: 24px;
+}
+.top1 img {
+  margin-left: 100%;
+}
+
+/* photogalray */
+.photogalary {
+  display: flex;
+  justify-content: space-between;
+  width: 1110px;
+  height: 110px;
+  border: 1px solid gray;
+  border-collapse: collapse;
+  border-left: none;
+  border-right: none;
+  margin-left: 300px;
+}
+.top2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 1400px;
+  height: 1900px;
+  margin-left: 60px;
+}
+.top2box {
+  width: 339px;
+  height: 476px;
+  margin-left: 90px;
+  margin-top: 40px;
+  background-color: rgb(241, 149, 218);
+}
+.innerbox2 {
+  margin-left: 20px;
+  margin-top: 14px;
+}
+.photogalary img {
+  width: 90px;
+}
+.navbar {
+  background-color: #000000;
+  color: white;
+  height: 120px;
+  align-items: center;
+}
+.navbar div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* #mobile view */
+@media screen and (max-width:576px){
+   .top1{
+    flex-direction: column-reverse;
+
+   }
+   .top1div1 {
+    margin-right: 100%;
+    justify-content: center;
+    align-items: center;
+   }
+   .top1div{
+    width: 430px;
+    margin-right: 100%;
+    overflow: scroll;
+    margin-left: 10px;
+    text-wrap: wrap;
+   }
+   .headerMenu1{
+    display: none;
+   }    
+   .headerMenu{
+    margin-bottom: 20px;
+    font-size: 15px;
+    
+   }
+   .photogalary{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-left: 10px;
+    height: 140px;
+    width: 100%;   
+    padding-top:10px; 
+    padding-left: 10px;
+   }
+   .top2{
+    grid-template-columns: repeat(1,1fr);
+
+    height: 4900px;
+   }
+   .top2box{
+    padding-left: 0;
+    margin-left: 0;
+    
+   }
+   .navbar{
+    height: 140px;
+    width: 100%;
+   }
+
+
+}
